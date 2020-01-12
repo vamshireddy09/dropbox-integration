@@ -6,7 +6,12 @@
 ## Requirements to access the application
 
 * Create a new Dropbox App in [App Console](https://www.dropbox.com/developers/apps).
-* Then Generate the access token for your App. (We will use it later to access the APIs)
+* Then Generate the access token for your App. (We will use it later to access the APIs).
+
+## Note to reviewer
+
+* I can't share my Access token due to security concerns.
+* If it is not possible to create a dropbox App, please send me an email at vamshi13091996@gmail , so that I can create a new dropbox account and will share the access token with you
 
 ## To run the application:
 ```
