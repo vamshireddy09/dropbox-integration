@@ -1,10 +1,14 @@
-# Getting Started
+# About
 
 * This application allows you to upload and download files from your Droppbox App provided you have the access token of the App.
 * The Rest enpoints exposed here can be accessed via PostMan.
-* To use the application first you have to create a new App in your Dropbox. Then generate the app key to proceed further.
 
-* It exposes following Rest endpoints
+## Requirements to access the application
+
+* Create a new Dropbox App in [App Console](https://www.dropbox.com/developers/apps).
+* Then Generate the access token for your App. (We will use it later to access the APIs)
+
+## It exposes following Rest endpoints
 
 * 1) API to Register your Dropbox App Access token
      ```
@@ -47,9 +51,14 @@
      
      You will get 401 if token is not provided or if HTTP session gets expired
      
-* To run the application:
+## To run the application:
 ```
   1) mvn clean install
   2) mvn spring-boot:run
 ```
 * Then access the application at `http://localhost:8080`
+
+## Next Steps
+* To develop a User Interface to access these APIs so that user can view, upload and download the folders and files from there
+* To enable logging into the application through Dropbox OAuth.
+* To configure the application so as to use any document provider as required.
