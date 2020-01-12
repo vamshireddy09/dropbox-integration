@@ -12,6 +12,7 @@
      URI: /register?token=<your_dropbox_app_access_token>
      ```
      This will store the access token in the HTTP session.
+     
      You will need to pass this token as a header for further operations
      
 * 2) API to get files and folders in a given folder
@@ -21,6 +22,7 @@
      Headers: Token=<your_dropbox_app_access_token>
      ```
      This will get all the folders and files inside the given folder(includes inner folders as well)
+     
      You will get 401 if token is not provided or if HTTP session gets expired
      
 * 3) API to download a file from your dropbox folder
@@ -30,6 +32,7 @@
      Headers: Token=<your_dropbox_app_access_token>
      ```
      This will download the file to your local FileSystem. Use Send and Download option in Postman.
+     
      You will get 401 if token is not provided or if HTTP session gets expired
      
 * 4) API to upload a file to your dropbox folder
@@ -39,7 +42,9 @@
      Headers: Token=<your_dropbox_app_access_token>
      ```
      Provide body as form-data with file as key and choose any file from your local FileSystem.
+     
      This will upload the given file to the given folder in your dropbox.
+     
      You will get 401 if token is not provided or if HTTP session gets expired
      
 * To run the application:
@@ -47,4 +52,4 @@
   1) mvn clean install
   2) mvn spring-boot:run
 ```
-  Then access the application at `http://localhost:8080`
+* Then access the application at `http://localhost:8080`
