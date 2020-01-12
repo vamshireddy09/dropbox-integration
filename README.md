@@ -58,7 +58,7 @@
 ```
 * Then access the application at `http://localhost:8080`
 
-## Next Steps
+## Future Development
 * To develop a User Interface to access these APIs so that user can view, upload and download the folders and files from there
 * To enable logging into the application through Dropbox OAuth.
 * To configure the application so as to use any document provider as required.
