@@ -10,7 +10,7 @@
 
 ## It exposes following Rest endpoints
 
-* 1) API to Register your Dropbox App Access token
+* 1) API to Register your Dropbox App Access token with this application
      ```
      HTTPMethod: POST
      URI: /register?token=<your_dropbox_app_access_token>
