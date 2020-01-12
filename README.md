@@ -8,6 +8,15 @@
 * Create a new Dropbox App in [App Console](https://www.dropbox.com/developers/apps).
 * Then Generate the access token for your App. (We will use it later to access the APIs)
 
+## To run the application:
+```
+  1) mvn clean install
+  2) mvn spring-boot:run
+```
+* Then access the application at `http://localhost:8080`
+
+* Use the postman collection provided
+
 ## It exposes following Rest endpoints
 
 * 1) API to Register your Dropbox App Access token with this application
@@ -51,13 +60,6 @@
      
      You will get 401 if token is not provided or if HTTP session gets expired
      
-## To run the application:
-```
-  1) mvn clean install
-  2) mvn spring-boot:run
-```
-* Then access the application at `http://localhost:8080`
-
 ## Future Development
 * To develop a User Interface to access these APIs so that user can view, upload and download the folders and files from there
 * To enable logging into the application through Dropbox OAuth.
