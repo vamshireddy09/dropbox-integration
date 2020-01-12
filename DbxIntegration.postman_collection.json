@@ -1,0 +1,159 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DbxIntegration",
+		"_postman_id": "801fbcc7-941e-08fc-05af-6ec3ced19e21",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Folders and Files in  a Folder",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/folder?folder=<absolute_path_of_folder>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"folder"
+					],
+					"query": [
+						{
+							"key": "folder",
+							"value": "<absolute_path_of_folder>",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "<your_dropbox_app_access_token>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register your Dropbox App",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/register?token=<your_dropbox_app_access_token>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "<your_dropbox_app_access_token>",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload a file",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/upload?folder=<absolute_path_of_folder>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					],
+					"query": [
+						{
+							"key": "folder",
+							"value": "<absolute_path_of_folder>",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "<your_dropbox_app_access_token>",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Download a File",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/download?filePath=<absolute_path_of_file_with_extension>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "<absolute_path_of_file_with_extension>",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "<your_dropbox_app_access_token>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
