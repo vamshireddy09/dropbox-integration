@@ -11,7 +11,7 @@
 ## Note to reviewer
 
 * I can't share my Access token due to security concerns.
-* If it is not possible to create a dropbox App, please send me an email at vamshi13091996@gmail , so that I can create a new dropbox account and will share the access token with you
+* If it is not possible to create a dropbox App, please send me an email at `vamshi13091996@gmail.com` , so that I can create a new dropbox account and will share the access token with you
 
 ## To run the application:
 ```
