@@ -1,6 +1,6 @@
 # About
 
-* This application allows you to upload and download files from your Droppbox App provided you have the access token of the App.
+* This application allows you to upload and download files from your Dropbox App provided you have the access token of the App.
 * The Rest enpoints exposed here can be accessed via PostMan.
 
 ## Requirements to access the application
